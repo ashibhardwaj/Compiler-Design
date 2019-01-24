@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    string s;
+    cout<<"Enter the string:";
+    cin>>s;
+    int state=0;
+    // Assuming that the DFA accepts strings ending with a/A.
+    for(int i=0; i<s.length();i++)
+    if(s[i]=='a' || s[i]=='A')
+        state=1;
+    else
+        state=0;
+
+    if(state==1)
+        cout<<"\nString will be accepted."<<endl;
+    else
+        cout<<"\nString will not be accepted."<<endl;
+    return 0;
+}
