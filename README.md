@@ -1,3 +1,3 @@
-# Compiler-Design
+# Theory of Computation
 
-Some compiler design lab practicals.
+Implementation of some concepts
